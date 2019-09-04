@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 04 Sep. 2019 -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My homepage with org-mode</title>
+<meta name="generator" content="Org mode">
+<meta name="author" content="Duncan Mac-Vicar P.">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1687066-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1687066-2');
+</script>
+<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' integrity='sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==' crossorigin='anonymous'/>
+<meta description='The blog of Duncan Mac-Vicar P.'/>
+<link rel='alternate' type='application+rss/xml' title='The blog of Duncan Mac-Vicar P.' href='/archive.xml'/>
+<link rel="stylesheet" href="css/site.css?v=e21a1eb21340254d7e0023bf45ef785954bb24f4151e4abcd60e4c86799b8d8b" type="text/css">
+</head>
+<body>
+<header id="preamble" class="status">
+<aside>
+  <h1>Hi.</h1>
+  <a href="/">
+    <img src="https://www.gravatar.com/avatar/3b67365812827fa25df5093b38934a8f?s=80" class="avatar" alt="My photo"/>
+  </a>
+  <h2>I'm <a href="/">Duncan Mac-Vicar P.</a></h2>
+  <div id="bio">
+    <small><p>I am inspired by creating software. I do that mostly at <a href="https://www.suse.com"><!--img src="https://www.suse.com/common/img/suse_54x33.png" height="33" width="54" style="float: left;"-->SUSE</a>.
+      <p>When things break, I fix them or go play guitar...</p></small>
+  </div>
+  <div id="social">
+    Follow me:
+    <div id="stalker">
+      <a title="dmacvicar on Github" href="https://github.com/dmacvicar">
+        <i class="fa fa-github-square"></i>
+      </a>
+      <a title="dmacvicar on Hacker News" href="https://news.ycombinator.com/user?id=dmacvicar">
+        <i class="fa fa-hacker-news"></i>
+      </a>
+      <a title="dmacvicar on Twitter" href="https://twitter.com/dmacvicar">
+        <i class="fa fa-twitter-square"></i>
+      </a>
+      <a title="RSS feed" id="atom" href="archive.xml">
+        <i class="fa fa-rss-square"></i>
+      </a>
+    </div>
+  </div>
+</aside>
+</header>
+<main id="content">
+<header>
+<h1 class="title">My homepage with org-mode</h1>
+</header>
+<section id="outline-container-org89df735" class="outline-2">
+<h2 id="org89df735">Introduction</h2>
+<div class="outline-text-2" id="text-org89df735">
+<p>
+This setup based on <a href="https://orgmode.org">org-mode</a> aims to replace my previous <a href="https://jekyllrb.com">Jekyll</a> setup used to publish my site.
+</p>
+</div>
+</section>
+
+<section id="outline-container-orgd89f7bd" class="outline-2">
+<h2 id="orgd89f7bd">Implementation</h2>
+<div class="outline-text-2" id="text-orgd89f7bd">
+<p>
+For details about the implementation see <a href="posts/2019-09-03-migrating-from-jekyll-to-org/index.html">the introductory post</a> and the <a href="https://github.com/dmacvicar/site.org"><i aria-hidden='true' class='fa fa-github'></i> Source</a>.
+</p>
+</div>
+</section>
+
+<section id="outline-container-orgf08e181" class="outline-2">
+<h2 id="orgf08e181">Usage</h2>
+<div class="outline-text-2" id="text-orgf08e181">
+<ul class="org-ul">
+<li>Posts go into <code>posts/</code>
+Preferably in their own subdirectory together with all their assets (self-contained)</li>
+<li>Tutorials go in <code>tutorials/</code>, as they are rendered (for now) with the <a href="https://github.com/fniessen/org-html-themes">readtheorg</a> theme</li>
+</ul>
+
+<p>
+To generate:
+</p>
+
+<pre class="example">
+$ make
+</pre>
+
+<p>
+The output site will be rendered in <code>public/</code>.
+</p>
+</div>
+</section>
+
+<section id="outline-container-org711df57" class="outline-2">
+<h2 id="org711df57">Features</h2>
+<div class="outline-text-2" id="text-org711df57">
+</div>
+<div id="outline-container-orgc0475a3" class="outline-4">
+<h4 id="orgc0475a3">Redirection</h4>
+<div class="outline-text-4" id="text-orgc0475a3">
+<p>
+When the site was generated using Jekyll, posts where generated in the <code>/:year/:month/:day/:id.html</code> route.
+In order to generate a redirect page, use the following keyword to generate a redirect page:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-meta-line">#+REDIRECT_FROM /old/url/index.html</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7dc38df" class="outline-3">
+<h3 id="org7dc38df">Drafts</h3>
+<div class="outline-text-3" id="text-org7dc38df">
+<p>
+To hide a post from the list of recent posts or the full archive, use:
+</p>
+
+<div class="org-src-container">
+<pre class="src src-org"><span class="org-org-meta-line">#+DRAFT t</span>
+</pre>
+</div>
+
+<p>
+Note that the post will still be published, but you will need to access it by its URL directly.
+</p>
+</div>
+</div>
+</section>
+
+<section id="outline-container-org0a784ca" class="outline-2">
+<h2 id="org0a784ca">License</h2>
+<div class="outline-text-2" id="text-org0a784ca">
+<p>
+The code used for generating the site is licensed under the <a href="LICENSE">MIT</a> license.
+</p>
+
+<p>
+The content of the site, Copyright (©) 2014-2019 Duncan Mac-Vicar P..
+</p>
+</div>
+</section>
+</main>
+<footer id="postamble" class="status">
+<p class='disclaimer'>The postings on this site are my own and don't necessarily represent my employer’s positions, strategies or opinions.</p>
+
+<p>Last updated 04 Sep. 2019. Built with <a href="https://www.gnu.org/software/emacs/">Emacs</a> 26.2 (<a href="https://orgmode.org">Org</a> mode 9.2.6). <a href="/README.html">Details</a>.</p>
+</footer>
+</body>
+</html>

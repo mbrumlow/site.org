@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+     xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+     xmlns:georss="http://www.georss.org/georss"
+     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+     xmlns:media="http://search.yahoo.com/mrss/"><channel>
+  <title>Blog</title>
+  <atom:link href="http://duncan.codes/archive.xml" rel="self" type="application/rss+xml" />
+  <link>http://duncan.codes/</link>
+  <description><![CDATA[]]></description>
+  <language>en</language>
+  <pubDate>Wed, 04 Sep 2019 12:52:05 +0000</pubDate>
+  <lastBuildDate>Wed, 04 Sep 2019 12:52:05 +0000</lastBuildDate>
+  <generator>Emacs 26.2 Org-mode 9.2.6</generator>
+  <webMaster>root@82ebee18b742 (root)</webMaster>
+  <image>
+    <url>https://orgmode.org/img/org-mode-unicorn-logo.png</url>
+    <title>Blog</title>
+    <link>http://duncan.codes/</link>
+  </image>
+
+
+  <item>
+    <title>Archive</title>
+    <link>http://duncan.codes/archive.html#org82a971d</link>
+    <author>root@82ebee18b742 (root)</author>
+    <guid isPermaLink="false">http://duncan.codes/archive.html#org82a971d</guid>
+    <pubDate>Wed, 04 Sep 2019 12:52:00 +0000</pubDate>
+
+    <description><![CDATA[<ul class="org-ul">
+    <li><a href="2019-09-03-migrating-from-jekyll-to-org/index.html">Migrating from Jekyll to org-mode and Github Actions</a></li>
+    <li><a href="2016-07-11-building-docker-images-with-plain-salt/index.html">Building Docker images with plain Salt</a></li>
+    <li><a href="2016-06-09-config-drift-salt-snapper/index.html">Managing configuration drift with Salt and Snapper</a></li>
+    <li><a href="2016-05-18-using-salt-like-ansible/index.html">Using Salt like Ansible</a></li>
+    <li><a href="2016-03-16-susemanager-3-backstage/index.html">Not sweet but salty, SUSE Manager 3 Technical Backstage Part I</a></li>
+    <li><a href="2014-06-11-suse-manager-2-1/index.html">SUSE Manager 2.1</a></li>
+    <li><a href="2006-10-31-listen-i-have-my-rights/index.html">LISTEN I HAVE MY RIGHTS!!!!</a></li>
+    </ul>
+    <a href='../archive.xml'><i class='fa fa-rss'></i></a>
+    ]]></description>
+  </item>
+</channel>
+</rss>
